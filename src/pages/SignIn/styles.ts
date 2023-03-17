@@ -5,21 +5,33 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  place-content: center;
+  /* place-content: center; */
 
-  img {
+  >div {
     display: none;
 
-    width: 100%;
-    max-height: 100vh;
+    padding: 1rem;
+    border-radius: 5px;
 
-    object-fit: cover;
+
+    img {
+      width: 100%;
+
+      border-radius: 5px;
+
+      justify-self: center;
+      object-fit: cover;
+    }
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     padding: 2.4rem;
 
-    >span{
+    span {
       display: flex;
       align-items: center;
 
@@ -27,15 +39,15 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 835px) {
     grid-template-columns: 1fr 1fr;
 
-    img{
-      display: block;
+    div{
+      display: flex;
     }
 
     main {
-      padding: 3rem 4.6rem;
+      padding: 3rem 6rem;
     }
 
   }
@@ -49,7 +61,7 @@ export const WelcomeMessage = styled.h1`
 
   text-align: center;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 835px) {
     font-size: 3rem;
     line-height: 3.8rem;
 

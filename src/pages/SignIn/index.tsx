@@ -1,5 +1,5 @@
 import React from 'react';
-import signInImage from '../../assets/signin-image.jpg'
+import signInImage from '../../assets/neutral.jpg'
 
 import { Container, WelcomeMessage } from './styles';
 
@@ -13,7 +13,9 @@ import { FcGoogle } from 'react-icons/fc'
 export const SignIn: React.FC = () => {
   return (
     <Container>
-      <img src={signInImage} alt="person holding a cell phone on a login page" />
+      <div>
+        <img src={signInImage} alt="person holding a cell phone on a login page" />
+      </div>
       <main>
         <WelcomeMessage>Welcome to Panorama, <br/> Sign To Continue</WelcomeMessage>
         <form>
