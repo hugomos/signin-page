@@ -19,9 +19,9 @@ export const SignIn: React.FC = () => {
       <main>
         <WelcomeMessage>Welcome to Panorama, <br/> Sign To Continue</WelcomeMessage>
         <form>
-          <Input label='Email' placeholder='example@email.com'/>
-          <Input label='Password' placeholder='******'/>
-          <Link href="#">Forgot Password?</Link>
+          <Input label='Email' placeholder='example@email.com' type={'email'}/>
+          <Input label='Password' placeholder='******' type={'password'}/>
+          <Link href="/forgot-password">Forgot Password?</Link>
           <Button>Sign In</Button>
           <Button variant='default'>
             <FcGoogle />
@@ -29,8 +29,8 @@ export const SignIn: React.FC = () => {
           </Button>
         </form>
         <span>
-          Dont´t have an account?
-          <Link href="#">Create a account</Link>
+          Dont't have an account?
+          <Link href="/create-account">Create a account</Link>
         </span>
       </main>
     </Container>

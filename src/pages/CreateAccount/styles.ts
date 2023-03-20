@@ -31,10 +31,30 @@ export const Container = styled.div`
     padding: 2.4rem;
 
     span {
+      width: 100%;
+
       display: flex;
+      align-self: center;
       align-items: center;
 
       gap: 0.5rem;
+
+      color: ${({ theme }) => theme.colors.gray400};
+      font-size: 1.4rem;
+
+      padding: 1.6rem 0;
+
+      &:before{
+        content: "";
+        border: 0.1px solid ${({ theme }) => theme.colors.gray200};
+        width: 100%;
+      }
+
+      &:after{
+        content: "";
+        border: 1px solid ${({ theme }) => theme.colors.gray200};
+        width: 100%;
+      }
     }
   }
 

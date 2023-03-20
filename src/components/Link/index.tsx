@@ -10,10 +10,8 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const Link: React.FC<Props> = ({ children, href="#", ...rest }: Props) => {
   return (
-    <Container href={href} target="_blank">
-      <span>
-        {children}
-      </span>
+    <Container href={href}>
+      {children}
     </Container>
   );
 }
